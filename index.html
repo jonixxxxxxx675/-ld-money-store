@@ -1,5 +1,4 @@
-
-<!doctype html>
+  <!doctype html>
 <html lang="pl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,20 +20,59 @@ header{height:76px;display:grid;grid-template-columns:1fr auto 1fr;align-items:c
 .newsletter{text-align:center;padding:65px 20px 72px}.newsletter h2{font:42px var(--serif);font-weight:400;margin:9px 0}.newsletter p{font:16px var(--serif);color:var(--muted)}.signup{display:flex;max-width:430px;margin:24px auto 0;border-bottom:1px solid var(--ink)}.signup input{flex:1;min-width:0;background:transparent;border:0;padding:14px 5px;outline:none;font-size:12px}.signup button{border:0;background:transparent;font-size:10px;letter-spacing:.12em}
 footer{background:#20221f;color:#e9e5dc;padding:40px 3% 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}footer .brand{text-align:left;display:inline-block}footer p{font:15px/1.5 var(--serif);color:#bdb9b0;max-width:260px}footer h4{font-size:10px;letter-spacing:.15em;font-weight:500}footer a:not(.brand){display:block;font-size:11px;color:#c6c1b8;margin:13px 0}.copyright{grid-column:1/-1;border-top:1px solid #454740;padding-top:17px;font-size:9px;color:#aaa69e;letter-spacing:.1em;display:flex;justify-content:space-between}
 .drawerback{position:fixed;inset:0;background:#0007;z-index:10;display:none}.drawerback.open{display:block}.drawer{position:absolute;right:0;top:0;height:100%;width:min(430px,100%);background:var(--paper);padding:25px;overflow:auto}.drawertop{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}.drawertop h2{font:30px var(--serif);font-weight:400;margin:0}.close{border:0;background:none;font-size:25px}.cartline{display:flex;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}.cartline img{width:76px;height:95px;object-fit:cover}.cartline h3{font:18px var(--serif);font-weight:400;margin:0 0 6px}.cartline p{font-size:12px;color:var(--muted)}.cartline button{border:0;background:none;text-decoration:underline;font-size:10px;padding:0}.carttotal{display:flex;justify-content:space-between;margin:22px 0;font-size:13px}.checkout{width:100%;background:var(--ink);color:white;border:0;padding:16px;text-transform:uppercase;letter-spacing:.13em;font-size:10px}.empty{padding:35px 0;font:18px var(--serif);color:var(--muted)}.searchbox{display:none;padding:14px 3%;border-bottom:1px solid var(--line)}.searchbox.open{display:flex;gap:10px}.searchbox input{width:100%;padding:12px;border:1px solid var(--line);background:transparent;outline:none}.mobilemenu{display:none}
-@media(max-width:900px){.links{gap:12px}.links a
-.dialogback{position:fixed;inset:0;background:#0008;z-index:40;display:none;align-items:center;justify-content:center;padding:18px}
-.dialogback.open{display:flex}.dialog{width:min(520px,100%);max-height:90vh;overflow:auto;background:var(--paper);padding:26px}
-.dialog h2{font:32px var(--serif);font-weight:400;margin:0 0 12px}.dialog p{font:15px/1.5 var(--serif);color:var(--muted)}
-.dialog .dialogactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.dialog input,.dialog select,.dialog textarea{width:100%;padding:12px;border:1px solid var(--line);background:transparent;font:12px var(--sans);margin:6px 0 12px}
-.dialog .btn{background:var(--ink);color:white;border-color:var(--ink)}
-.ann-control{border:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer;padding:3px 0}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #8b785d;outline-offset:3px}
-@media(max-width:600px){.dialog{padding:22px}}
+@media(max-width:900px){.links{gap:12px}.links a{font-size:9px}.benefits{grid-template-columns:repeat(3,1fr)}.benefit:nth-child(n+4){display:none}.categories{grid-template-columns:repeat(4,1fr);row-gap:22px}.tile{height:210px}.productgrid{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:1.5fr 1fr 1fr}footer>div:last-of-type{display:none}}
+@media(max-width:600px){.announcement{font-size:7px;justify-content:center}.announcement span:first-child{display:none}header{height:65px;padding:0 14px}.links{display:none}.mobilemenu{display:block}.brand strong{font-size:24px}.brand small{font-size:6px}.tools{gap:8px}.tools .aboutlink{display:none}.ib{font-size:19px}.hero{height:580px;min-height:0}.hero>img{object-position:57% center}.herotxt{left:7%;top:12%;max-width:86%}.herotxt h1{font-size:47px}.herotxt p{font-size:16px}.btn{min-width:0;padding:13px 15px;font-size:9px}.actions{gap:8px}.heronote{right:7%;bottom:7%;font-size:16px}.benefits{grid-template-columns:repeat(2,1fr)}.benefit{justify-content:flex-start;padding:14px 12px}.benefit:nth-child(3){display:none}.benefit span{font-size:12px}.tiles{grid-template-columns:1fr;padding:12px 12px 30px}.tile{height:230px}.sectionhead{padding:0 15px 14px}.sectionhead h2,.producthead h2{font-size:31px}.categories{grid-template-columns:repeat(2,1fr);gap:20px 12px;padding:0 15px 40px}.category span{font-size:12px}.products{padding:32px 15px 45px}.producthead{display:block}.filters{margin-top:15px;overflow:auto}.filter{white-space:nowrap}.productgrid{gap:22px 10px}.productinfo h3{font-size:17px}.add{float:none;display:block;margin-top:10px;width:100%}.editorial{grid-template-columns:1fr}.editorial img{height:310px}.editorialcopy{padding:35px 25px 42px}.editorialcopy h2{font-size:43px}.newsletter{padding:50px 20px}.newsletter h2{font-size:35px}footer{grid-template-columns:1fr 1fr;padding:35px 20px 20px;gap:20px}footer>div:first-child{grid-column:1/-1}.copyright{font-size:8px;gap:12px;flex-wrap:wrap}}
+
+/* Vermont responsive refinements */
+@media(max-width:600px){
+  body{overflow-x:hidden}
+  .announcement{height:27px;gap:12px;padding:0 8px;white-space:nowrap}
+  .announcement span:nth-child(2){display:none}
+  header{grid-template-columns:38px 1fr 120px;height:68px;padding:0 12px}
+  .brand{justify-self:center}
+  .brand strong{font-size:25px;letter-spacing:.17em}
+  .tools{gap:6px}
+  .tools .ib{font-size:20px}
+  .hero{height:520px;min-height:0}
+  .hero>img{object-position:58% center}
+  .herotxt{left:6%;top:12%;max-width:88%}
+  .herotxt h1{font-size:clamp(36px,10vw,47px);letter-spacing:.025em}
+  .heronote{font-size:15px;bottom:6%}
+  .benefits{grid-template-columns:1fr 1fr}
+  .benefit{min-height:62px;gap:8px;padding:10px}
+  .benefit:nth-child(n+3){display:none}
+  .benefit b{font-size:8px}
+  .benefit span{font-size:11px}
+  .tiles{grid-template-columns:1fr;gap:10px;padding:12px 12px 28px}
+  .tile{height:210px}
+  .tilecopy{top:25%}
+  .sectionhead{align-items:flex-end;gap:10px}
+  .sectionhead h2,.producthead h2{font-size:29px}
+  .categories{display:flex;overflow-x:auto;gap:12px;padding:0 15px 34px;scroll-snap-type:x mandatory}
+  .category{flex:0 0 39%;scroll-snap-align:start}
+  .category img{aspect-ratio:1/1.08}
+  .category span{font-size:10px;line-height:1.3}
+  .products{padding:30px 12px 42px}
+  .producthead{display:block}
+  .filters{display:flex;overflow-x:auto;gap:6px;padding-bottom:4px}
+  .filter{padding:9px 11px;font-size:9px}
+  .productgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}
+  .productimg img{aspect-ratio:.72}
+  .productinfo{padding:9px 1px}
+  .productinfo h3{font-size:16px;line-height:1.2}
+  .price{font-size:12px}
+  .add{display:block;float:none;width:100%;margin-top:9px;padding:10px 5px;font-size:8px}
+  footer{grid-template-columns:1fr 1fr;padding:30px 15px 18px;gap:18px}
+  footer>div:first-child{grid-column:1/-1}
+  footer>div:last-of-type{display:block}
+  .copyright{font-size:8px;gap:10px;flex-direction:column}
+}
+
 </style>
 </head>
 <body>
-<div class="announcement"><span>A HIGHER STANDARD OF EVERYDAY LIFE</span><span>WORLDWIDE SHIPPING　|　FREE RETURNS</span><span><button class="ann-control" id="currencybtn" type="button">POLAND (PLN)　⌄</button>　<button class="ann-control" id="languagebtn" type="button">EN　⌄</button></span></div>
-<header><nav class="links"><a href="#products" data-gender-link="men">MEN</a><a href="#products" data-gender-link="women">WOMEN</a><a href="#products" data-gender-link="essentials">ESSENTIALS</a><a href="#products" data-tag-filter="NEW IN">NEW IN</a></nav><button class="ib mobilemenu" id="menubtn">☰</button><a class="brand" href="#top"><strong>VERMONT</strong><small>TIMELESS APPAREL</small></a><div class="tools"><a class="aboutlink" href="#story">ABOUT</a><a class="aboutlink" href="#journal">JOURNAL</a><a class="aboutlink" href="#footer">CONTACT</a><button class="ib" id="searchbtn" aria-label="Szukaj">⌕</button><button class="ib" id="account" aria-label="Konto">♙</button><button class="ib" id="wishbtn" aria-label="Ulubione">♡<span class="count" id="wishcount">0</span></button><button class="ib" id="cartbtn" aria-label="Koszyk">♧<span class="count" id="cartcount">0</span></button></div></header>
+<div class="announcement"><span>A HIGHER STANDARD OF EVERYDAY LIFE</span><span>WORLDWIDE SHIPPING　|　FREE RETURNS</span><span>POLAND (PLN)　⌄　 EN　⌄</span></div>
+<header><nav class="links"><a href="#products" data-gender-link="men">MEN</a><a href="#products" data-gender-link="women">WOMEN</a><a href="#products" data-gender-link="essentials">ESSENTIALS</a><a href="#products">NEW IN</a></nav><button class="ib mobilemenu" id="menubtn">☰</button><a class="brand" href="#top"><strong>VERMONT</strong><small>TIMELESS APPAREL</small></a><div class="tools"><a class="aboutlink" href="#footer">ABOUT</a><a class="aboutlink" href="#footer">JOURNAL</a><a class="aboutlink" href="#footer">CONTACT</a><button class="ib" id="searchbtn" aria-label="Szukaj">⌕</button><button class="ib" id="account" aria-label="Konto">♙</button><button class="ib" id="wishbtn" aria-label="Ulubione">♡<span class="count" id="wishcount">0</span></button><button class="ib" id="cartbtn" aria-label="Koszyk">♧<span class="count" id="cartcount">0</span></button></div></header>
 <div class="searchbox" id="searchbox"><input id="searchinput" placeholder="Szukaj produktów…" aria-label="Szukaj produktów"><button class="filter" id="clearsearch">WYCZYŚĆ</button></div>
 <main id="top">
 <section class="hero"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=85" alt="Editorialowa kampania modowa"><div class="herotxt"><div class="eyebrow">NEW COLLECTION</div><h1>A MORE<br>EXCEPTIONAL<br>TOMORROW</h1><div style="width:32px;border-top:1px solid white"></div><p>Timeless pieces for a modern world.</p><div class="actions"><a class="btn" href="#products" data-gender-link="men">SHOP MEN</a><a class="btn outline" href="#products" data-gender-link="women">SHOP WOMEN</a></div></div><div class="heronote">Style<br>lives longer<br>than trends.</div></section>
@@ -50,16 +88,8 @@ footer{background:#20221f;color:#e9e5dc;padding:40px 3% 20px;display:grid;grid-t
 <a class="category" href="#products" data-category="Shoes"><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80" alt="Obuwie"><span>SHOES</span></a>
 <a class="category" href="#products" data-category="Lifestyle"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80" alt="Lifestyle"><span>LIFESTYLE</span></a></div></section>
 <section class="products" id="products"><div class="producthead"><div><div class="eyebrow">THE EDIT</div><h2>TIMELESS SELECTION</h2></div><div class="filters"><button class="filter active" data-gender="all">ALL</button><button class="filter" data-gender="men">MEN</button><button class="filter" data-gender="women">WOMEN</button><button class="filter" data-gender="essentials">ESSENTIALS</button></div></div><div class="productgrid" id="productgrid"></div></section>
-<section class="editorial" id="story"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=85" alt="Ponadczasowa moda"><div class="editorialcopy"><div class="eyebrow">THE VERMONT PHILOSOPHY</div><h2>Less, but<br>exceptional.</h2><p>Tworzymy garderobę, która wykracza poza sezonowe trendy. Szlachetne inspiracje, spokojna paleta barw i fasony, do których chce się wracać.</p><a href="#categories" class="btn">DISCOVER OUR WORLD</a></div></section>
-<section class="newsletter" id="journal"><div class="eyebrow">A NOTE FROM VERMONT</div><h2>Elegance, delivered.</h2><p>Dołącz do naszego świata. Otrzymuj wiadomości o kolekcjach i inspiracjach.</p><form class="signup" id="signup"><input type="email" id="email" placeholder="Twój adres e-mail" required><button type="submit">SUBSCRIBE　→</button></form><small id="signupmsg" style="display:block;margin-top:12px;color:#77736b"></small></section>
 </main>
-<footer id="footer"><div><a class="brand" href="#top"><strong>VERMONT</strong><small>TIMELESS APPAREL</small></a><p>Quiet luxury. Thoughtfully chosen essentials. A timeless wardrobe for every day.</p></div><div><h4>SHOP</h4><a href="#products" data-gender-link="men">Men</a><a href="#products" data-gender-link="women">Women</a><a href="#products" data-gender-link="essentials">Essentials</a><a href="#categories">All categories</a></div><div><h4>CLIENT CARE</h4><a href="#footer" data-info="shipping">Shipping & Returns</a><a href="#footer" data-info="sizes">Size Guide</a><a href="#footer" data-info="faq">FAQ</a><a href="#footer" data-info="contact">Contact us</a></div><div><h4>THE HOUSE</h4><a href="#story">Our philosophy</a><a href="#journal">Journal</a><a href="#footer" data-info="privacy">Privacy policy</a><a href="#footer" data-info="terms">Terms & conditions</a></div><div class="copyright"><span>© 2026 VERMONT — CONCEPT STORE</span><span>POLAND · PLN　 |　 ENGLISH</span><span><a href="#footer" data-info="instagram">INSTAGRAM</a>　<a href="#footer" data-info="pinterest">PINTEREST</a></span></div></footer>
-<div class="dialogback" id="dialogback" role="dialog" aria-modal="true" aria-labelledby="dialogtitle">
-  <div class="dialog">
-    <div class="drawertop"><h2 id="dialogtitle">VERMONT</h2><button class="close" id="closedialog" aria-label="Zamknij">×</button></div>
-    <div id="dialogcontent"></div>
-  </div>
-</div>
+<footer id="footer"><div><a class="brand" href="#top"><strong>VERMONT</strong><small>TIMELESS APPAREL</small></a><p>Quiet luxury. Thoughtfully chosen essentials. A timeless wardrobe for every day.</p></div><div><h4>SHOP</h4><a href="#products" data-gender-link="men">Men</a><a href="#products" data-gender-link="women">Women</a><a href="#products" data-gender-link="essentials">Essentials</a><a href="#categories">All categories</a></div><div><h4>CLIENT CARE</h4><a href="#footer">Shipping & Returns</a><a href="#footer">Size Guide</a><a href="#footer">FAQ</a><a href="mailto:hello@vermont.example">Contact us</a></div><div><h4>THE HOUSE</h4><a href="#top">Our philosophy</a><a href="#top">Journal</a><a href="#footer">Privacy policy</a><a href="#footer">Terms & conditions</a></div><div class="copyright"><span>© 2026 VERMONT — CONCEPT STORE</span><span>POLAND · PLN　 |　 ENGLISH</span><span>INSTAGRAM　 PINTEREST</span></div></footer>
 <div class="drawerback" id="drawerback"><aside class="drawer"><div class="drawertop"><h2>Your bag</h2><button class="close" id="closecart">×</button></div><div id="cartitems"></div><div class="carttotal"><span>Subtotal</span><strong id="subtotal">0,00 zł</strong></div><button class="checkout" id="checkout">CONTINUE TO CHECKOUT</button><p style="font-size:10px;color:#77736b;line-height:1.5">Sklep demonstracyjny. Płatności i składanie zamówień nie są jeszcze aktywne.</p></aside></div>
 <script>
 const products=[
@@ -88,70 +118,10 @@ document.getElementById('clearsearch').onclick=()=>{search='';document.getElemen
 document.getElementById('cartbtn').onclick=()=>document.getElementById('drawerback').classList.add('open');
 document.getElementById('closecart').onclick=()=>document.getElementById('drawerback').classList.remove('open');
 document.getElementById('drawerback').addEventListener('click',e=>{if(e.target.id==='drawerback')e.currentTarget.classList.remove('open')});
-document.getElementById('wishbtn').onclick=()=>{
-  const content=document.getElementById('dialogcontent');
-  document.getElementById('dialogtitle').textContent='Your wishlist';
-  content.innerHTML=wishes.length
-    ? '<p>Saved items:</p><ul>'+wishes.map(id=>{const p=products.find(x=>x.id===id);return '<li>'+p.name+' — '+money(p.price)+'</li>'}).join('')+'</ul><div class="dialogactions"><button class="btn" id="wishlistshop">CONTINUE SHOPPING</button></div>'
-    : '<p>Your wishlist is empty. Tap the heart on a product to save it here.</p><div class="dialogactions"><button class="btn" id="wishlistshop">EXPLORE PRODUCTS</button></div>';
-  document.getElementById('dialogback').classList.add('open');
-  document.getElementById('wishlistshop').onclick=()=>{document.getElementById('dialogback').classList.remove('open');document.getElementById('products').scrollIntoView({behavior:'smooth'})};
-};
-document.getElementById('account').onclick=()=>{
-  document.getElementById('dialogtitle').textContent='Client account';
-  document.getElementById('dialogcontent').innerHTML='<p>Sign in to manage your Vermont experience.</p><form id="accountform"><label for="accountemail">Email address</label><input id="accountemail" type="email" placeholder="you@example.com" required><label for="accountpassword">Password</label><input id="accountpassword" type="password" placeholder="Password" required><div class="dialogactions"><button class="btn" type="submit">SIGN IN</button><button class="filter" type="button" id="createaccount">CREATE ACCOUNT</button></div><small>Demo account interface — authentication is not connected yet.</small></form>';
-  document.getElementById('dialogback').classList.add('open');
-  document.getElementById('accountform').onsubmit=e=>{e.preventDefault();notify('Account sign-in will be enabled when the store backend is connected.')};
-  document.getElementById('createaccount').onclick=()=>notify('Account registration will be enabled when the store backend is connected.');
-};
-document.getElementById('checkout').onclick=()=>{
-  if(!cart.length){notify('Your bag is empty. Add a product first.');return;}
-  document.getElementById('dialogtitle').textContent='Checkout';
-  document.getElementById('dialogcontent').innerHTML='<p>Review your details to prepare a demo order. No payment will be taken.</p><form id="checkoutform"><label for="checkoutname">Full name</label><input id="checkoutname" required placeholder="Full name"><label for="checkoutemail">Email address</label><input id="checkoutemail" type="email" required placeholder="you@example.com"><label for="checkoutaddress">Delivery address</label><textarea id="checkoutaddress" rows="2" required placeholder="Street, city, postal code"></textarea><p><strong>Order total: '+money(cart.reduce((sum,x)=>sum+products.find(p=>p.id===x.id).price*x.qty,0))+'</strong></p><div class="dialogactions"><button class="btn" type="submit">PREPARE DEMO ORDER</button></div></form><small>Demo store: checkout, shipping and payment processing are not connected.</small>';
-  document.getElementById('dialogback').classList.add('open');
-  document.getElementById('checkoutform').onsubmit=e=>{e.preventDefault();document.getElementById('dialogback').classList.remove('open');notify('Demo order details validated. No order or payment was submitted.')};
-};
-document.getElementById('menubtn').onclick=()=>{
-  document.getElementById('dialogtitle').textContent='Explore Vermont';
-  document.getElementById('dialogcontent').innerHTML='<div class="dialogactions" style="display:grid"><a class="btn" href="#products" data-mobile-gender="men">SHOP MEN</a><a class="btn" href="#products" data-mobile-gender="women">SHOP WOMEN</a><a class="btn" href="#products" data-mobile-gender="essentials">ESSENTIALS</a><a class="filter" href="#categories">OUR CATEGORIES</a><a class="filter" href="#story">OUR STORY</a><a class="filter" href="#footer">CONTACT</a></div>';
-  document.getElementById('dialogback').classList.add('open');
-  document.querySelectorAll('[data-mobile-gender]').forEach(a=>a.onclick=()=>{gender=a.dataset.mobileGender;render();document.getElementById('dialogback').classList.remove('open')});
-  document.querySelectorAll('#dialogcontent a[href^="#"]').forEach(a=>a.addEventListener('click',()=>document.getElementById('dialogback').classList.remove('open')));
-};
+document.getElementById('wishbtn').onclick=()=>notify(wishes.length?'Ulubione produkty: '+wishes.map(id=>products.find(p=>p.id===id).name).join(', '):'Nie masz jeszcze ulubionych produktów.');
+document.getElementById('account').onclick=()=>notify('Konto klienta będzie dostępne po uruchomieniu sklepu.');
+document.getElementById('checkout').onclick=()=>notify('Sklep demonstracyjny — płatności zostaną skonfigurowane przed uruchomieniem.');
+document.getElementById('menubtn').onclick=()=>notify('Wybierz kategorię z menu sklepu.');
 document.getElementById('signup').onsubmit=e=>{e.preventDefault();document.getElementById('signupmsg').textContent='Dziękujemy! Zapisy demonstracyjne nie są jeszcze wysyłane.';document.getElementById('email').value=''};
-document.getElementById('closedialog').onclick=()=>document.getElementById('dialogback').classList.remove('open');
-document.getElementById('dialogback').addEventListener('click',e=>{if(e.target.id==='dialogback')e.currentTarget.classList.remove('open')});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('dialogback').classList.remove('open');document.getElementById('drawerback').classList.remove('open')}});
-
-document.querySelectorAll('[data-tag-filter]').forEach(a=>a.addEventListener('click',()=>{
-  gender='all'; search='';
-  document.getElementById('searchinput').value='';
-  render();
-  const list=products.filter(p=>p.tag===a.dataset.tagFilter);
-  grid.innerHTML=list.length?list.map(p=>`<article class="product"><div class="productimg"><img src="${p.image}" alt="${p.name}" loading="lazy">${p.tag?`<span class="tag">${p.tag}</span>`:''}<button class="heart" aria-label="Ulubione" onclick="toggleWish(${p.id})">${wishes.includes(p.id)?'♥':'♡'}</button></div><div class="productinfo"><small>${p.category}</small><h3>${p.name}</h3><span class="price">${money(p.price)}</span><button class="add" onclick="addCart(${p.id})">ADD TO BAG +</button></div></article>`).join(''):'<p>New arrivals will appear here soon.</p>';
-}));
-const infoText={
-  shipping:['Shipping & Returns','Informacje demonstracyjne: szczegóły dostawy i zwrotów zostaną uzupełnione przed uruchomieniem sprzedaży.'],
-  sizes:['Size Guide','Przewodnik po rozmiarach zostanie dodany przed uruchomieniem sklepu.'],
-  faq:['FAQ','Sekcja najczęściej zadawanych pytań jest przygotowana jako element demonstracyjny.'],
-  contact:['Contact us','Dane kontaktowe marki nie zostały jeszcze skonfigurowane.'],
-  privacy:['Privacy policy','Polityka prywatności wymaga uzupełnienia zgodnie z rzeczywistym sposobem działania sklepu i przepisami.'],
-  terms:['Terms & conditions','Regulamin sklepu należy uzupełnić przed przyjmowaniem zamówień.'],
-  instagram:['Instagram','Profil Instagram marki nie został jeszcze podłączony.'],
-  pinterest:['Pinterest','Profil Pinterest marki nie został jeszcze podłączony.'],
-  currency:['Currency','Waluta demonstracyjna: PLN. Obsługa innych walut nie jest jeszcze skonfigurowana.'],
-  language:['Language','Język demonstracyjny: English / Polski. Pełne tłumaczenia nie są jeszcze skonfigurowane.']
-};
-function openInfo(key){
-  const item=infoText[key]; if(!item)return;
-  document.getElementById('dialogtitle').textContent=item[0];
-  document.getElementById('dialogcontent').innerHTML='<p>'+item[1]+'</p><div class="dialogactions"><button class="btn" id="infoclose">OK</button></div>';
-  document.getElementById('dialogback').classList.add('open');
-  document.getElementById('infoclose').onclick=()=>document.getElementById('dialogback').classList.remove('open');
-}
-document.querySelectorAll('[data-info]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();openInfo(a.dataset.info)}));
-document.getElementById('currencybtn').onclick=()=>openInfo('currency');
-document.getElementById('languagebtn').onclick=()=>openInfo('language');
-
 render();updateCart();
 </script></body></html>
